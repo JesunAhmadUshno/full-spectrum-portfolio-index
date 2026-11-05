@@ -4,7 +4,7 @@ One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BAT
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-04 (Sprint 1 exit update).
+Last updated: 2026-11-04 (Sprint 1 exit update, fan-out completion refresh).
 
 ## Sprint structure: December Compression Protocol
 
@@ -23,7 +23,7 @@ Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.
 ### P02 tokenizer-lab
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,200. Deep (compressed): DONE, grade 8,200.
-- Fan-out: IN PROGRESS (2026-11-04, Sprint 1 exit work). Not done.
+- Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.87).
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/tokenizer-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/tokenizer-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/tokenizer-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/tokenizer-lab/releases
 
 ### P05 rag-foundation
@@ -41,7 +41,7 @@ Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.
 ### P14 structured-outputs-lab
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,200. Deep (compressed): DONE, grade 7,800.
-- Fan-out: IN PROGRESS (2026-11-04, Sprint 1 exit work). Not done.
+- Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.90).
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/structured-outputs-lab/releases
 
 ## Sprint 1: one project part way
@@ -74,7 +74,7 @@ Of the other 24 projects (the 29 minus the five at v1.0 above), 23 remain at SCA
 | Project | Repo | Wave | Status |
 | --- | --- | --- | --- |
 | P01 | llm-from-scratch | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P02 | tokenizer-lab | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out IN PROGRESS |
+| P02 | tokenizer-lab | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
 | P03 | vllm-serving-lab | Wave 3 | SCAFFOLD |
 | P04 | cuda-kernels-lab | Wave 2 | SCAFFOLD |
 | P05 | rag-foundation | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
@@ -86,7 +86,7 @@ Of the other 24 projects (the 29 minus the five at v1.0 above), 23 remain at SCA
 | P11 | quantization-lab | Wave 6 | SCAFFOLD |
 | P12 | llm-observability | Wave 5 | SCAFFOLD |
 | P13 | guardrails-lab | Wave 5 | SCAFFOLD |
-| P14 | structured-outputs-lab | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out IN PROGRESS |
+| P14 | structured-outputs-lab | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
 | P15 | local-first-ai | Wave 7 | SCAFFOLD |
 | P16 | document-intelligence | Wave 6 | SCAFFOLD |
 | P17 | signal-ml-lab | Wave 3 | SCAFFOLD |
