@@ -4,7 +4,7 @@ One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BAT
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-05 (Sprint 1 closeout audit).
+Last updated: 2026-11-05 (Sprint 2 early pull: Learn and Build for P03, P04, P07; polish packs complete for all five v1.0 projects).
 
 ## Sprint structure: December Compression Protocol
 
@@ -47,9 +47,9 @@ Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.
 
 ## Sprint 1 closeout audit (2026-11-05)
 
-- Actions polish packs: DONE for P06 rag-eval-harness, P05 rag-foundation, and P14 structured-outputs-lab. The standard's named backfill order (P06, P05, P14) is complete, each pack applied through a pull request. P01 and P02 do not carry the pack yet.
-- Greetings live proof: DONE for all three pack repos. The fixed Greetings workflow ran with conclusion success on a real pull request in each repo on 2026-11-05 (P06 on its v1.2 pull request, P05 and P14 on Dependabot pull requests).
-- Dependabot: real update pull requests are open on all three pack repos (GitHub Actions version bumps). They are reviewed and merged in normal loop cycles, never auto-merged blind.
+- Actions polish packs: DONE for all five v1.0 projects. The standard's named backfill order (P06, P05, P14) completed first, each through a pull request; P01 llm-from-scratch and P02 tokenizer-lab were applied on 2026-11-05, each through a pull request, each graded 9,100 of 10,000.
+- Greetings live proof: DONE for all three original pack repos. The fixed Greetings workflow ran with conclusion success on a real pull request in each repo on 2026-11-05 (P06 on its v1.2 pull request, P05 and P14 on Dependabot pull requests).
+- Dependabot: the 13 update pull requests opened on P06, P05, and P14 were all merged in loop cycles on 2026-11-05 after per-PR CI and CodeQL checks (10 merged directly, 3 after Dependabot rebases). A Dependabot check on P01 and P02 on 2026-11-05 found no open pull requests. Nothing is auto-merged blind.
 - This index repo: CI is registered and green. CI runs on main completed success on 2026-11-05.
 - Publications tracker: current for the five v1.0 projects at this audit. P01 has a candidate row, and the P06 row carries its v1.2 update.
 
@@ -61,9 +61,31 @@ Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.
 - Build: BLOCKED. Build does not open until a fresh live R610 capture lands in a planned power-on window. Deep and fan-out: NOT STARTED.
 - Release: [v0.1](https://github.com/JesunAhmadUshno/server-and-networking-lab/releases/tag/v0.1). All releases: https://github.com/JesunAhmadUshno/server-and-networking-lab/releases
 
+## Sprint 2 early pull (2026-11-05)
+
+Sprint 1's only remaining item (P23 Build) is blocked on a named external window, so the first three Sprint 2 projects were pulled forward in their listed order under the early-pull rule. Sprint 2 has not formally started; this work is recorded as early.
+
+### P03 vllm-serving-lab
+
+- Learn: DONE 2026-11-05 (early), grade 8,400. 20 tests; a paged-KV-cache simulator benchmark (reuse hit 98.97 percent at high locality, 50.00 percent at low locality).
+- Build: DONE 2026-11-05 (early), grade 8,000. A real open model (Qwen/Qwen2.5-0.5B-Instruct) served through an OpenAI-compatible API on the fleet GPU (RTX 5050) with Transformers on PyTorch; vLLM itself not used (Windows node, no WSL), named in the repo. Thinking-budget study: 0, 0, and 8 of 10 correct at budgets 32, 128, and 384 tokens; 315.25 tokens per correct answer at 384. Load test: 12 of 12 requests, 0.477 requests per second.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
+
+### P04 cuda-kernels-lab
+
+- Learn: DONE 2026-11-05 (early), grade 8,300. Kernel set with numerical oracles; naive matmul 0.28 GFLOP/s in C++ at size 512 versus 117.80 for the tiled shared-memory simulation.
+- Build: DONE 2026-11-05 (early), grade 8,000. C++ test runner with 16 assertion tests; a real AddressSanitizer debugging session (heap-buffer-overflow, root cause, fix, clean rerun); GPU benchmarks on the RTX 5050 from PyTorch native operations (matmul 6,764.67 GFLOP/s at size 1024). The custom CUDA kernels are written but NOT compiled or run: the fleet GPU node has no CUDA toolkit available; named in the repo.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
+
+### P07 agent-from-scratch
+
+- Learn: DONE 2026-11-05 (early), grade 8,500. Deterministic tool-using agent loop, 14 of 14 tasks correct.
+- Build: DONE 2026-11-05 (early), grade 8,500. Plan-then-execute agent with persistent JSON memory and four named recovery strategies; 20 of 20 labelled tasks matched expectations (18 succeeded, 2 failed as expected), mean 1.5 steps, results byte-identical across two runs. The planner is a deterministic policy, not an LLM, stated plainly in the repo.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
+
 ## Honest status of the rest
 
-Of the other 24 projects (the 29 minus the five at v1.0 above), 23 remain at SCAFFOLD level (Wave 0, 2026-11-04) with Learn NOT STARTED. P23 above is the one exception in that group. A scaffold is not a build and is never graded as one.
+Of the other 24 projects (the 29 minus the five at v1.0 above), 20 remain at SCAFFOLD level (Wave 0, 2026-11-04) with Learn NOT STARTED. The exceptions in that group are P23 (Learn DONE, Build BLOCKED, above) and P03, P04, and P07 (Learn and Build DONE early, above). A scaffold is not a build and is never graded as one.
 
 ## Named holds
 
@@ -84,11 +106,11 @@ Of the other 24 projects (the 29 minus the five at v1.0 above), 23 remain at SCA
 | --- | --- | --- | --- |
 | P01 | llm-from-scratch | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
 | P02 | tokenizer-lab | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P03 | vllm-serving-lab | Wave 3 | SCAFFOLD |
-| P04 | cuda-kernels-lab | Wave 2 | SCAFFOLD |
+| P03 | vllm-serving-lab | Sprint 2 | BUILD DONE (early) |
+| P04 | cuda-kernels-lab | Sprint 2 | BUILD DONE (early) |
 | P05 | rag-foundation | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
 | P06 | rag-eval-harness | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P07 | agent-from-scratch | Wave 3 | SCAFFOLD |
+| P07 | agent-from-scratch | Sprint 2 | BUILD DONE (early) |
 | P08 | orchestrator-lab | Wave 4 | SCAFFOLD |
 | P09 | mcp-toolkit | Wave 4 | SCAFFOLD |
 | P10 | finetune-lab | Wave 5 | SCAFFOLD |
