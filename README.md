@@ -4,7 +4,7 @@ One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BAT
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-04 (Sprint 1 exit update, fan-out completion refresh).
+Last updated: 2026-11-05 (Sprint 1 closeout audit).
 
 ## Sprint structure: December Compression Protocol
 
@@ -36,6 +36,7 @@ Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,700. Deep (compressed): DONE, grade 7,900.
 - Fan-out: DONE, grade 9,000.
+- Update 2026-11-05: v1.1 research upgrade and v1.2 span and scale shipped after v1.0. v1.2 grade 9,050 of 10,000 (span extraction, real samples raised to 500 and 200 cases, per-case drill down). Releases add [v1.1](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.1) and [v1.2](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.2).
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/rag-eval-harness/releases
 
 ### P14 structured-outputs-lab
@@ -43,6 +44,14 @@ Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,200. Deep (compressed): DONE, grade 7,800.
 - Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.90).
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/structured-outputs-lab/releases
+
+## Sprint 1 closeout audit (2026-11-05)
+
+- Actions polish packs: DONE for P06 rag-eval-harness, P05 rag-foundation, and P14 structured-outputs-lab. The standard's named backfill order (P06, P05, P14) is complete, each pack applied through a pull request. P01 and P02 do not carry the pack yet.
+- Greetings live proof: DONE for all three pack repos. The fixed Greetings workflow ran with conclusion success on a real pull request in each repo on 2026-11-05 (P06 on its v1.2 pull request, P05 and P14 on Dependabot pull requests).
+- Dependabot: real update pull requests are open on all three pack repos (GitHub Actions version bumps). They are reviewed and merged in normal loop cycles, never auto-merged blind.
+- This index repo: CI is registered and green. CI runs on main completed success on 2026-11-05.
+- Publications tracker: current for the five v1.0 projects at this audit. P01 has a candidate row, and the P06 row carries its v1.2 update.
 
 ## Sprint 1: one project part way
 
@@ -58,7 +67,7 @@ Of the other 24 projects (the 29 minus the five at v1.0 above), 23 remain at SCA
 
 ## Named holds
 
-- P19 distributed-training-lab: Deep PARKED. No free multi-GPU route exists, and a deadline does not create GPUs.
+- P19 distributed-training-lab: Deep redefined 2026-11-05 (December Compression Protocol, Addendum B) as the 2-GPU Kaggle exercise set, honestly labelled, in Sprint 3. The 4-GPU scope is the parked v1.1 remainder in that repo ROADMAP.md.
 - P24 cyber-range-lab: defensive work only. Offensive scenario work stays held for Jesun batched sign-off. No scenario content is claimed here.
 - P30: DEFERRED until the first application target is named. P30 is not one of the 29 projects in the table below.
 
@@ -91,7 +100,7 @@ Of the other 24 projects (the 29 minus the five at v1.0 above), 23 remain at SCA
 | P16 | document-intelligence | Wave 6 | SCAFFOLD |
 | P17 | signal-ml-lab | Wave 3 | SCAFFOLD |
 | P18 | voice-agent-lab | Wave 7 | SCAFFOLD |
-| P19 | distributed-training-lab | Wave 4 (Learn and Build) | SCAFFOLD; Deep PARKED |
+| P19 | distributed-training-lab | Wave 4 (Learn and Build) | SCAFFOLD; Deep is the 2-GPU Kaggle set, Sprint 3 |
 | P20 | ml-platform-lab | Wave 6 | SCAFFOLD |
 | P21 | systems-languages-lab | Wave 7 | SCAFFOLD |
 | P22 | multimodal-lab | Wave 8 | SCAFFOLD |
