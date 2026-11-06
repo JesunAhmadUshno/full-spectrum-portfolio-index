@@ -4,160 +4,304 @@ One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BAT
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-05 (P11, P15, and P16 at v1.0 with fan-out DONE, Actions polish packs applied, and Pages live; Sprint 2 early pull: Learn and Build for P03, P04, P07; polish packs complete for all five earlier v1.0 projects).
+Last updated: 2026-11-05, ledger state through 2026-11-05 23:23 EST (batch ledger hidden_files/batch-state.md). This refresh was verified live on 2026-11-05: gh release list was checked for all 29 projects, Pages and polish claims were taken from the ledger with live spot checks, and the blocked or held set was checked against live releases and pull requests.
+
+## Headline state at this refresh
+
+- 26 projects are at v1.0, with Learn, Build, and compressed Deep DONE, written fan-out DONE, and Actions polish packs applied: P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14, P15, P16, P17, P18, P20, P21, P22, P24, P26, P27, P28, and P29.
+- P06 rag-eval-harness is past v1.0 at v1.2 (see its section below).
+- P24 cyber-range-lab is at v1.0 at defensive scope only (see Named holds).
+- 3 projects are in the blocked or held set, named honestly below: P19, P23, and P25. No other project is held.
+- Release verification in this refresh: every one of the 26 v1.0 projects shows a v1.0 release live on GitHub (gh release list, 2026-11-05), plus v0.5 and v0.1. P06 also shows v1.1 and v1.2. P19 shows only v0.5 and v0.1, P23 shows only v0.1, and P25 shows no releases, which matches their held states below.
 
 ## Sprint structure: December Compression Protocol
 
-The batch runs under the December Compression Protocol. Sprint 1 runs 2026-11-05 to 2026-11-18. Five Sprint 1 projects closed early on 2026-11-04: Learn, Build, and compressed Deep are all DONE for each of them, at v1.0. Compressed Deep means the single hardest capability in the project SPEC, built, tested, and benchmarked, with the rest of the Deep scope named in that repo ROADMAP.md as the v1.1 backlog.
+The batch runs under the December Compression Protocol (2026-11-04). Sprint 1 runs 2026-11-05 to 2026-11-18, Sprint 2 runs 2026-11-19 to 2026-12-02, Sprint 3 runs 2026-12-03 to 2026-12-16, and Sprint 4 runs 2026-12-17 to 2026-12-30.
 
-## Sprint 1: five projects at v1.0 (closed 2026-11-04)
+Under the early-pull rule, when every remaining item in the active sprint is blocked on a named external window, the next sprint projects are pulled forward in their listed order and worked the same way. Blocked items stay named and are worked first whenever their window opens. Early work is recorded as early, never as the next sprint having formally started. That is how Sprint 2, Sprint 3, and Sprint 4 projects reached v1.0 during Sprint 1.
 
-Grades are out of 10,000, taken from the batch ledger (hidden_files/batch-state.md). Release tags were verified live with gh release list on 2026-11-04.
+Compressed Deep means the single hardest capability in the project SPEC, built, tested, and benchmarked, with a failure-modes section written. The rest of the v2 Deep scope is named in that repo ROADMAP.md as the v1.1 backlog.
 
-### P01 llm-from-scratch
+Actions polish pack means, per the polish standard: CI matrix on Python 3.11 and 3.12 with ruff lint, CodeQL scanning, Dependabot for pip and Actions, a release workflow attaching artifacts to tag releases, Labeler and Greetings, Stale in comment-only mode, and Pages for flagship docs where the standard applies. PyPI publishing stays held (it needs a new credential, Jesun tap only).
+
+Written fan-out DONE means the written fan-out set for the finished level exists in that repo (blog, tutorial, website page copy, LinkedIn draft, and release notes, as logged in that repo PUBLICITY.md), each piece graded on the 1,000-point publicity rubric with a 900 ship line. The loop prepares drafts and never posts to social itself. Actual social posting follows the standing platform rules and gates.
+
+## The 26 projects at v1.0
+
+Grades below are out of 10,000 and are taken from the batch ledger only where a grade was readily available in a ledger entry. Where no grade is stated, this index states v1.0 plus fan-out DONE without a numeric grade, rather than guessing.
+
+### Sprint 1 projects closed 2026-11-04
+
+#### P01 llm-from-scratch
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,700. Deep (compressed): DONE, grade 8,300.
 - Fan-out: DONE, grade 9,300.
+- Actions polish pack: applied.
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/llm-from-scratch/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/llm-from-scratch/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/llm-from-scratch/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/llm-from-scratch/releases
 
-### P02 tokenizer-lab
+#### P02 tokenizer-lab
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,200. Deep (compressed): DONE, grade 8,200.
-- Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.87).
+- Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.87) per the earlier ledger entry carried in this index.
+- Actions polish pack: applied.
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/tokenizer-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/tokenizer-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/tokenizer-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/tokenizer-lab/releases
 
-### P05 rag-foundation
+#### P05 rag-foundation
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,400. Deep (compressed): DONE, grade 7,700.
 - Fan-out: DONE, grade 9,550.
+- Actions polish pack: applied.
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/rag-foundation/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/rag-foundation/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/rag-foundation/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/rag-foundation/releases
 
-### P06 rag-eval-harness
+#### P06 rag-eval-harness (at v1.2)
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,700. Deep (compressed): DONE, grade 7,900.
-- Fan-out: DONE, grade 9,000.
-- Update 2026-11-05: v1.1 research upgrade and v1.2 span and scale shipped after v1.0. v1.2 grade 9,050 of 10,000 (span extraction, real samples raised to 500 and 200 cases, per-case drill down). Releases add [v1.1](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.1) and [v1.2](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.2).
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/rag-eval-harness/releases
+- Fan-out: DONE, grade 9,000 at v1.0.
+- Update 2026-11-05: v1.1 research upgrade and v1.2 span and scale shipped after v1.0. v1.2 grade 9,050 of 10,000 (span extraction, real samples raised to 500 and 200 cases, per-case drill down).
+- Actions polish pack: applied. Pages: live, with a React results lab at the Pages URL per the v1.1 upgrade record.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.0), [v1.1](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.1), [v1.2](https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.2). All releases: https://github.com/JesunAhmadUshno/rag-eval-harness/releases
 
-### P14 structured-outputs-lab
+#### P14 structured-outputs-lab
 
 - Learn: DONE, grade 8,700. Build: DONE, grade 8,200. Deep (compressed): DONE, grade 7,800.
-- Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.90).
+- Fan-out: DONE, grade 9,560. Jev claim_check on the fan-out blog claim: route CLEAR (noul 0.90) per the earlier ledger entry carried in this index.
+- Actions polish pack: applied.
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/structured-outputs-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/structured-outputs-lab/releases
 
-## Sprint 1 closeout audit (2026-11-05)
+### Sprint 2 projects at v1.0 (early pull, fan-out DONE)
 
-- Actions polish packs: DONE for all five v1.0 projects. The standard's named backfill order (P06, P05, P14) completed first, each through a pull request; P01 llm-from-scratch and P02 tokenizer-lab were applied on 2026-11-05, each through a pull request, each graded 9,100 of 10,000.
-- Greetings live proof: DONE for all three original pack repos. The fixed Greetings workflow ran with conclusion success on a real pull request in each repo on 2026-11-05 (P06 on its v1.2 pull request, P05 and P14 on Dependabot pull requests).
-- Dependabot: the 13 update pull requests opened on P06, P05, and P14 were all merged in loop cycles on 2026-11-05 after per-PR CI and CodeQL checks (10 merged directly, 3 after Dependabot rebases). A Dependabot check on P01 and P02 on 2026-11-05 found no open pull requests. Nothing is auto-merged blind.
-- This index repo: CI is registered and green. CI runs on main completed success on 2026-11-05.
-- Publications tracker: current for the five v1.0 projects at this audit. P01 has a candidate row, and the P06 row carries its v1.2 update.
+Sprint 2 is P03, P04, P07, P12, P13, and P17. All six are at v1.0 with fan-out DONE and Actions polish packs applied per the ledger standing at 2026-11-05 23:23 EST. Each shows v0.1, v0.5, and v1.0 releases live (verified in this refresh).
 
-## Sprint 1: one project part way
+#### P03 vllm-serving-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 2 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Earlier measured notes from the ledger, kept from the previous index version: Learn grade 8,400 (paged-KV-cache simulator, reuse hit 98.97 percent at high locality, 50.00 percent at low locality); Build grade 8,000 (a real open model served through an OpenAI-compatible API on the fleet GPU; vLLM itself not used on the Windows node, named in the repo).
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/vllm-serving-lab/releases
+
+#### P04 cuda-kernels-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 2 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Earlier measured notes from the ledger, kept from the previous index version: Learn grade 8,300; Build grade 8,000 (custom CUDA kernels written but NOT compiled or run, because the fleet GPU node has no CUDA toolkit available; named in the repo).
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases
+
+#### P07 agent-from-scratch
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 2 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Earlier measured notes from the ledger, kept from the previous index version: Learn grade 8,500; Build grade 8,500 (the planner is a deterministic policy, not an LLM, stated plainly in the repo).
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/agent-from-scratch/releases
+
+#### P12 llm-observability
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 2 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/llm-observability/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/llm-observability/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/llm-observability/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/llm-observability/releases
+
+#### P13 guardrails-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 2 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/guardrails-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/guardrails-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/guardrails-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/guardrails-lab/releases
+
+#### P17 signal-ml-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 2 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/signal-ml-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/signal-ml-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/signal-ml-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/signal-ml-lab/releases
+
+### Sprint 3 projects at v1.0 (early pull, fan-out DONE)
+
+Sprint 3 projects at v1.0 in this refresh are P08, P09, P10, P24, and P27. P19 is the sixth Sprint 3 project and is in the blocked or held set below. Each project here shows v0.1, v0.5, and v1.0 releases live (verified in this refresh), with fan-out DONE and Actions polish packs applied per the ledger.
+
+#### P08 orchestrator-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 3 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/orchestrator-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/orchestrator-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/orchestrator-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/orchestrator-lab/releases
+
+#### P09 mcp-toolkit
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 3 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/mcp-toolkit/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/mcp-toolkit/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/mcp-toolkit/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/mcp-toolkit/releases
+
+#### P10 finetune-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 3 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/finetune-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/finetune-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/finetune-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/finetune-lab/releases
+
+#### P24 cyber-range-lab (defensive only)
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 3 pull), defensive scope only.
+- Fan-out: DONE. Actions polish pack: applied.
+- Held part: the offensive scenario list stays held for Jesun batched sign-off. No scenario content is claimed here. See Named holds.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/cyber-range-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/cyber-range-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/cyber-range-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/cyber-range-lab/releases
+
+#### P27 agent-evals-and-harness
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 3 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases
+
+### Sprint 4 projects at v1.0 (early pull, fan-out DONE)
+
+Sprint 4 projects at v1.0 in this refresh are P11, P15, P16, P18, P20, P21, P22, P26, P28, and P29. P25 is the Sprint 4 capstone and is in the blocked or held set below. Each project here shows v0.1, v0.5, and v1.0 releases live (verified in this refresh), with fan-out DONE and Actions polish packs applied per the ledger standing at 2026-11-05 23:23 EST. Pages status was recorded as built in the ledger for the Sprint 4 exit work, and Pages was live spot-checked in this refresh for a sample (see Verification notes).
+
+#### P11 quantization-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE. Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/quantization-lab/ per the previous index record and the ledger.
+- Open Dependabot item: PR #5, Bump numpy from 1.26.4 to 2.5.4, stays OPEN and unmerged (see Open Dependabot items). Verified OPEN in this refresh.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/quantization-lab/releases
+
+#### P15 local-first-ai
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE. Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/local-first-ai/ per the previous index record and the ledger.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/local-first-ai/releases
+
+#### P16 document-intelligence
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE. Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/document-intelligence/ per the previous index record and the ledger.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/document-intelligence/releases
+
+#### P18 voice-agent-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/voice-agent-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/voice-agent-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/voice-agent-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/voice-agent-lab/releases
+
+#### P20 ml-platform-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE. Actions polish pack: applied.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/ml-platform-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/ml-platform-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/ml-platform-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/ml-platform-lab/releases
+
+#### P21 systems-languages-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE, overall fan-out grade 9,452 of 10,000 per the ledger entry for its polish and fan-out cycle (all pieces above the 900 ship line on the 1,000-point rubric). Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/systems-languages-lab/ per the ledger (status built, HTTP 200 verified by the coordinator in that cycle).
+- Note kept from the ledger: Go and Rust are stated as UNEXECUTED in its fan-out pieces; the measured work is the Python reference only.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/systems-languages-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/systems-languages-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/systems-languages-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/systems-languages-lab/releases
+
+#### P22 multimodal-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE, overall fan-out grade 9,457 of 10,000 per the ledger entry for its polish and fan-out cycle (all pieces above the 900 ship line). Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/multimodal-lab/ per the ledger (status built, HTTP 200 verified by the coordinator in that cycle).
+- Note kept from the ledger: no VLM downloaded or run, encoder stand-in, synthetic only, no public data claimed, in every fan-out piece.
+- Open Dependabot item: PR #5, Bump numpy from 1.26.4 to 2.5.4, stays OPEN and unmerged (see Open Dependabot items). Verified OPEN in this refresh.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/multimodal-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/multimodal-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/multimodal-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/multimodal-lab/releases
+
+#### P26 rl-environments-and-verifiers
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE, overall fan-out grade 9,462 of 10,000 per the ledger entry dated 2026-11-05 23:23 EST (all pieces above the 900 ship line). Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/rl-environments-and-verifiers/ per the ledger (status built, HTTP 200 verified by the coordinator in that cycle), and Pages status built was spot-checked live in this refresh.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/rl-environments-and-verifiers/releases
+
+#### P28 post-training-data-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE, overall fan-out grade 9,500 of 10,000 per the ledger entry dated 2026-11-05 23:23 EST (all pieces above the 900 ship line). Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/post-training-data-lab/ per the ledger (status built, HTTP 200 verified by the coordinator in that cycle).
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/post-training-data-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/post-training-data-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/post-training-data-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/post-training-data-lab/releases
+
+#### P29 agent-memory-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 4 pull).
+- Fan-out: DONE, overall fan-out grade 9,452 of 10,000 per the ledger entry dated 2026-11-05 23:23 EST (all pieces above the 900 ship line). Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/agent-memory-lab/ per the ledger (status built, HTTP 200 verified by the coordinator in that cycle), and Pages status built was spot-checked live in this refresh.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-memory-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-memory-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/agent-memory-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/agent-memory-lab/releases
+
+## Blocked or held set (named honestly)
+
+### P19 distributed-training-lab
+
+- Learn: DONE 2026-11-05 (early, Sprint 3 pull). Build: DONE 2026-11-05 (early, Sprint 3 pull).
+- Actions polish pack: DONE per the ledger. Pages: LIVE. Verified in this refresh: Pages status built at https://jesunahmadushno.github.io/distributed-training-lab/, and the polish workflows are active (CI, CodeQL, Greetings, Labeler, Release artifacts, Stale comment-only, and Dependabot).
+- Deep: OPEN. A prep package has shipped, but Deep closure needs a verified Kaggle T4 x2 session per Addendum B of the December Compression Protocol (Jesun ruling 2026-11-05: P19 Deep is the 2-GPU Kaggle exercise set, honestly labelled). No Kaggle session is claimed in the ledger through 2026-11-05 23:23 EST, and no GPU number is claimed for P19 Deep.
+- Parked scope: the 4-GPU scope is the parked v1.1 remainder in P19 ROADMAP.md.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v0.5). No v1.0 release exists, verified in this refresh. All releases: https://github.com/JesunAhmadUshno/distributed-training-lab/releases
 
 ### P23 server-and-networking-lab
 
 - Learn: DONE 2026-11-04, grade 8,700.
-- Build: BLOCKED. Build does not open until a fresh live R610 capture lands in a planned power-on window. Deep and fan-out: NOT STARTED.
-- Release: [v0.1](https://github.com/JesunAhmadUshno/server-and-networking-lab/releases/tag/v0.1). All releases: https://github.com/JesunAhmadUshno/server-and-networking-lab/releases
+- Build: BLOCKED on a fresh live R610 capture. Build does not open until that capture lands in a planned power-on window. Deep and fan-out: NOT STARTED.
+- Release: [v0.1](https://github.com/JesunAhmadUshno/server-and-networking-lab/releases/tag/v0.1). No v0.5 or v1.0 release exists, verified in this refresh. All releases: https://github.com/JesunAhmadUshno/server-and-networking-lab/releases
 
-## Sprint 2 early pull (2026-11-05)
+### P25 fleet-capstone
 
-Sprint 1's only remaining item (P23 Build) is blocked on a named external window, so the first three Sprint 2 projects were pulled forward in their listed order under the early-pull rule. Sprint 2 has not formally started; this work is recorded as early.
-
-### P03 vllm-serving-lab
-
-- Learn: DONE 2026-11-05 (early), grade 8,400. 20 tests; a paged-KV-cache simulator benchmark (reuse hit 98.97 percent at high locality, 50.00 percent at low locality).
-- Build: DONE 2026-11-05 (early), grade 8,000. A real open model (Qwen/Qwen2.5-0.5B-Instruct) served through an OpenAI-compatible API on the fleet GPU (RTX 5050) with Transformers on PyTorch; vLLM itself not used (Windows node, no WSL), named in the repo. Thinking-budget study: 0, 0, and 8 of 10 correct at budgets 32, 128, and 384 tokens; 315.25 tokens per correct answer at 384. Load test: 12 of 12 requests, 0.477 requests per second.
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/vllm-serving-lab/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
-
-### P04 cuda-kernels-lab
-
-- Learn: DONE 2026-11-05 (early), grade 8,300. Kernel set with numerical oracles; naive matmul 0.28 GFLOP/s in C++ at size 512 versus 117.80 for the tiled shared-memory simulation.
-- Build: DONE 2026-11-05 (early), grade 8,000. C++ test runner with 16 assertion tests; a real AddressSanitizer debugging session (heap-buffer-overflow, root cause, fix, clean rerun); GPU benchmarks on the RTX 5050 from PyTorch native operations (matmul 6,764.67 GFLOP/s at size 1024). The custom CUDA kernels are written but NOT compiled or run: the fleet GPU node has no CUDA toolkit available; named in the repo.
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/cuda-kernels-lab/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
-
-### P07 agent-from-scratch
-
-- Learn: DONE 2026-11-05 (early), grade 8,500. Deterministic tool-using agent loop, 14 of 14 tasks correct.
-- Build: DONE 2026-11-05 (early), grade 8,500. Plan-then-execute agent with persistent JSON memory and four named recovery strategies; 20 of 20 labelled tasks matched expectations (18 succeeded, 2 failed as expected), mean 1.5 steps, results byte-identical across two runs. The planner is a deterministic policy, not an LLM, stated plainly in the repo.
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
-
-## Three more projects at v1.0 (2026-11-05)
-
-Releases were verified live with gh on 2026-11-05: each repo is public and its v1.0 release exists. Each repo PUBLICITY.md records its v1.0 fan-out set for 2026-11-05, its active workflows include the Actions polish pack (CI, CodeQL, Greetings, Labeler, Release artifacts, Stale in comment-only mode, and Dependabot), and GitHub Pages reports status built for each repo.
-
-### P11 quantization-lab
-
-- Learn, Build, Deep: DONE, v1.0 on 2026-11-05.
-- Fan-out: DONE.
-- Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/quantization-lab/
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/quantization-lab/releases
-
-### P15 local-first-ai
-
-- Learn, Build, Deep: DONE, v1.0 on 2026-11-05.
-- Fan-out: DONE.
-- Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/local-first-ai/
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/local-first-ai/releases
-
-### P16 document-intelligence
-
-- Learn, Build, Deep: DONE, v1.0 on 2026-11-05.
-- Fan-out: DONE.
-- Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/document-intelligence/
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/document-intelligence/releases
-
-## Honest status of the rest
-
-Of the other 21 projects (the 29 minus the eight at v1.0 above), 17 remain at SCAFFOLD level (Wave 0, 2026-11-04) with Learn NOT STARTED. The exceptions in that group are P23 (Learn DONE, Build BLOCKED, above) and P03, P04, and P07 (Learn and Build DONE early, above). A scaffold is not a build and is never graded as one.
+- Status: SCAFFOLD only.
+- Assembly is scheduled 2026-12-28 to 2026-12-30, on top of the finished set, in Sprint 4.
+- Learn may be pulled forward under the early-pull rule, but Learn is NOT claimed as done here. Verified in this refresh: no merged P25 Learn pull request exists (the repo shows no pull requests at all at refresh time), and no releases exist.
+- Releases: none. All releases: https://github.com/JesunAhmadUshno/fleet-capstone/releases
 
 ## Named holds
 
-- P19 distributed-training-lab: Deep redefined 2026-11-05 (December Compression Protocol, Addendum B) as the 2-GPU Kaggle exercise set, honestly labelled, in Sprint 3. The 4-GPU scope is the parked v1.1 remainder in that repo ROADMAP.md.
-- P24 cyber-range-lab: defensive work only. Offensive scenario work stays held for Jesun batched sign-off. No scenario content is claimed here.
+- P19 Deep: held on a verified Kaggle T4 x2 session, per Addendum B above. The 4-GPU scope stays parked as the v1.1 remainder.
+- P23 Build and Deep: blocked on a fresh live R610 capture in a planned power-on window.
+- P25 assembly: 2026-12-28 to 2026-12-30. Learn may be pulled forward, but is not done at this refresh.
+- P24 cyber-range-lab: at v1.0 at defensive scope only. Its offensive scenario list stays held for Jesun batched sign-off. No scenario content is claimed here.
 - P30: DEFERRED until the first application target is named. P30 is not one of the 29 projects in the table below.
+
+## Open Dependabot items
+
+These two items stay OPEN and unmerged for named reasons. They are not blockers for the v1.0 state above, and they are re-checked only if Dependabot pushes a new commit.
+
+- P11 quantization-lab PR #5: Bump numpy from 1.26.4 to 2.5.4. OPEN, verified in this refresh at https://github.com/JesunAhmadUshno/quantization-lab/pull/5. Reason it stays open per the ledger: the same bump already failed the Python 3.11 leg on P11 (Python 3.11 incompatibility in the ledger wording for the pair), so it is not merged.
+- P22 multimodal-lab PR #5: Bump numpy from 1.26.4 to 2.5.4. OPEN, verified in this refresh at https://github.com/JesunAhmadUshno/multimodal-lab/pull/5. Reason it stays open per the ledger: merging would change the version the v1.0 results were recorded with (the recorded runs used numpy 1.26.4), and the same bump already failed the Python 3.11 leg on P11.
+
+Note on wording: the ledger names the pair together. The Python 3.11 failure is recorded on P11, and the recorded-version reason is recorded on P22. This index keeps both reasons visible for both items, rather than assigning a single reason to a single repo.
 
 ## Flagships first
 
-1. fleet-capstone (P25): the full-stack chain in one repo.
-2. rag-eval-harness (P06) and agent-evals-and-harness (P27): evaluation, the strongest seed work. P06 is at v1.0 (see above); P27 is at SCAFFOLD.
-3. rl-environments-and-verifiers (P26) with finetune-lab (P10): post-training.
-4. vllm-serving-lab (P03): the inference optimisation lab.
+1. fleet-capstone (P25): the full-stack chain in one repo. Status: SCAFFOLD, assembly 2026-12-28 to 2026-12-30 (see blocked or held set).
+2. rag-eval-harness (P06) and agent-evals-and-harness (P27): evaluation, the strongest seed work. P06 is at v1.2; P27 is at v1.0 with fan-out DONE.
+3. rl-environments-and-verifiers (P26) with finetune-lab (P10): post-training. Both are at v1.0 with fan-out DONE.
+4. vllm-serving-lab (P03): the inference optimisation lab. Status: v1.0 with fan-out DONE.
+
+## Verification notes for this refresh
+
+- Releases: gh release list checked live on 2026-11-05 for all 29 projects. Result: the 26 v1.0 projects each list v1.0, v0.5, and v0.1 (P06 also lists v1.2 and v1.1); P19 lists v0.5 and v0.1 only; P23 lists v0.1 only; P25 lists no releases.
+- P25 Learn claim: gh pr list for fleet-capstone (all states) returned no pull requests in this refresh, so no merged Learn pull request exists to claim.
+- Dependabot: gh pr view confirmed P11 PR #5 OPEN and P22 PR #5 OPEN, both titled Bump numpy from 1.26.4 to 2.5.4, in this refresh.
+- Pages and polish spot checks in this refresh: P19 Pages status built with its polish workflows active; Pages status built was also spot-checked live for llm-from-scratch, rag-eval-harness, rl-environments-and-verifiers, agent-memory-lab, and cyber-range-lab. All other Pages and polish claims in this README are taken from the batch ledger entries through 2026-11-05 23:23 EST, not re-checked repo by repo in this refresh, and are worded as per the ledger where that is the source.
+- Grades: numeric grades are stated only where the ledger or the previous verified index version carried them readily (Sprint 1 five, the early measured notes for P03, P04, and P07, P23 Learn, P06 v1.2, and the fan-out overall grades for P21, P22, P26, P28, and P29). No other numeric grade is claimed in this refresh.
 
 ## All 29 projects (labs and supporting work)
 
-| Project | Repo | Wave | Status |
+| Project | Repo | Sprint | Status |
 | --- | --- | --- | --- |
-| P01 | llm-from-scratch | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P02 | tokenizer-lab | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P03 | vllm-serving-lab | Sprint 2 | BUILD DONE (early) |
-| P04 | cuda-kernels-lab | Sprint 2 | BUILD DONE (early) |
-| P05 | rag-foundation | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P06 | rag-eval-harness | Wave 1 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P07 | agent-from-scratch | Sprint 2 | BUILD DONE (early) |
-| P08 | orchestrator-lab | Wave 4 | SCAFFOLD |
-| P09 | mcp-toolkit | Wave 4 | SCAFFOLD |
-| P10 | finetune-lab | Wave 5 | SCAFFOLD |
-| P11 | quantization-lab | Wave 6 | v1.0: Learn, Build, Deep DONE 2026-11-05; fan-out DONE; Actions polish pack applied; Pages live |
-| P12 | llm-observability | Wave 5 | SCAFFOLD |
-| P13 | guardrails-lab | Wave 5 | SCAFFOLD |
-| P14 | structured-outputs-lab | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P15 | local-first-ai | Wave 7 | v1.0: Learn, Build, Deep DONE 2026-11-05; fan-out DONE; Actions polish pack applied; Pages live |
-| P16 | document-intelligence | Wave 6 | v1.0: Learn, Build, Deep DONE 2026-11-05; fan-out DONE; Actions polish pack applied; Pages live |
-| P17 | signal-ml-lab | Wave 3 | SCAFFOLD |
-| P18 | voice-agent-lab | Wave 7 | SCAFFOLD |
-| P19 | distributed-training-lab | Wave 4 (Learn and Build) | SCAFFOLD; Deep is the 2-GPU Kaggle set, Sprint 3 |
-| P20 | ml-platform-lab | Wave 6 | SCAFFOLD |
-| P21 | systems-languages-lab | Wave 7 | SCAFFOLD |
-| P22 | multimodal-lab | Wave 8 | SCAFFOLD |
-| P23 | server-and-networking-lab | Waves 1 to 2 | Learn DONE 2026-11-04 (8,700); Build BLOCKED pending fresh live R610 capture |
-| P24 | cyber-range-lab | Wave 5 (after P13) | SCAFFOLD; defensive only, scenario sign-off HELD |
-| P25 | fleet-capstone | Scaffold in Wave 0, assembly in Wave 8 | SCAFFOLD |
-| P26 | rl-environments-and-verifiers | Wave 6 (after P10) | SCAFFOLD |
-| P27 | agent-evals-and-harness | Wave 6 | SCAFFOLD |
-| P28 | post-training-data-lab | Waves 6 to 7 | SCAFFOLD |
-| P29 | agent-memory-lab | Waves 6 to 7 | SCAFFOLD |
+| P01 | llm-from-scratch | Sprint 1 | v1.0: Learn, Build, Deep DONE; fan-out DONE; polish pack applied |
+| P02 | tokenizer-lab | Sprint 1 | v1.0: Learn, Build, Deep DONE; fan-out DONE; polish pack applied |
+| P03 | vllm-serving-lab | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P04 | cuda-kernels-lab | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P05 | rag-foundation | Sprint 1 | v1.0: Learn, Build, Deep DONE; fan-out DONE; polish pack applied |
+| P06 | rag-eval-harness | Sprint 1 | v1.2: Learn, Build, Deep DONE; fan-out DONE; polish pack applied |
+| P07 | agent-from-scratch | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P08 | orchestrator-lab | Sprint 3 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P09 | mcp-toolkit | Sprint 3 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P10 | finetune-lab | Sprint 3 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P11 | quantization-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied; Dependabot PR #5 OPEN (named) |
+| P12 | llm-observability | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P13 | guardrails-lab | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P14 | structured-outputs-lab | Sprint 1 | v1.0: Learn, Build, Deep DONE; fan-out DONE; polish pack applied |
+| P15 | local-first-ai | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P16 | document-intelligence | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P17 | signal-ml-lab | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P18 | voice-agent-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P19 | distributed-training-lab | Sprint 3 | Learn and Build DONE; polish pack DONE; Pages LIVE; Deep OPEN (Kaggle T4 x2, Addendum B); 4-GPU scope parked v1.1 |
+| P20 | ml-platform-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P21 | systems-languages-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P22 | multimodal-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied; Dependabot PR #5 OPEN (named) |
+| P23 | server-and-networking-lab | Sprint 1 | Learn DONE (8,700); Build BLOCKED on fresh live R610 capture; Deep and fan-out NOT STARTED |
+| P24 | cyber-range-lab | Sprint 3 | v1.0: Learn, Build, Deep DONE (early), defensive only; fan-out DONE; polish pack applied; scenario list HELD for Jesun sign-off |
+| P25 | fleet-capstone | Sprint 4 assembly | SCAFFOLD; assembly 2026-12-28 to 2026-12-30; Learn NOT claimed done |
+| P26 | rl-environments-and-verifiers | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P27 | agent-evals-and-harness | Sprint 3 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P28 | post-training-data-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
+| P29 | agent-memory-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 
 ## License
 
