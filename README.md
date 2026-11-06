@@ -4,7 +4,7 @@ One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BAT
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-05, ledger state through 2026-11-05 23:23 EST (batch ledger hidden_files/batch-state.md). This refresh was verified live on 2026-11-05: gh release list was checked for all 29 projects, Pages and polish claims were taken from the ledger with live spot checks, and the blocked or held set was checked against live releases and pull requests.
+Last updated: 2026-11-06, ledger state through 2026-11-06 00:53 EST (batch ledger hidden_files/batch-state.md). This refresh adds the P25 fleet-capstone Build scope state verified live on 2026-11-06: gh release list for fleet-capstone shows v0.1 and v0.5, Pages status built with HTTP 200 at https://jesunahmadushno.github.io/fleet-capstone/, and no open pull requests on that repo. All other project rows are unchanged from the 2026-11-05 refresh.
 
 ## Headline state at this refresh
 
@@ -12,7 +12,8 @@ Last updated: 2026-11-05, ledger state through 2026-11-05 23:23 EST (batch ledge
 - P06 rag-eval-harness is past v1.0 at v1.2 (see its section below).
 - P24 cyber-range-lab is at v1.0 at defensive scope only (see Named holds).
 - 3 projects are in the blocked or held set, named honestly below: P19, P23, and P25. No other project is held.
-- Release verification in this refresh: every one of the 26 v1.0 projects shows a v1.0 release live on GitHub (gh release list, 2026-11-05), plus v0.5 and v0.1. P06 also shows v1.1 and v1.2. P19 shows only v0.5 and v0.1, P23 shows only v0.1, and P25 shows no releases, which matches their held states below.
+- P25 fleet-capstone is now at Build scope: Learn and Build DONE, Actions polish pack applied, Pages live, and written fan-out DONE at Build scope. Its Deep assembly stays scheduled 2026-12-28 to 2026-12-30 and is not claimed here.
+- Release verification in this refresh: every one of the 26 v1.0 projects shows a v1.0 release live on GitHub (gh release list, 2026-11-05), plus v0.5 and v0.1. P06 also shows v1.1 and v1.2. P19 shows only v0.5 and v0.1, P23 shows only v0.1, and P25 shows v0.1 and v0.5 verified live on 2026-11-06, which matches its Build scope state below.
 
 ## Sprint structure: December Compression Protocol
 
@@ -232,16 +233,17 @@ Sprint 4 projects at v1.0 in this refresh are P11, P15, P16, P18, P20, P21, P22,
 
 ### P25 fleet-capstone
 
-- Status: SCAFFOLD only.
-- Assembly is scheduled 2026-12-28 to 2026-12-30, on top of the finished set, in Sprint 4.
-- Learn may be pulled forward under the early-pull rule, but Learn is NOT claimed as done here. Verified in this refresh: no merged P25 Learn pull request exists (the repo shows no pull requests at all at refresh time), and no releases exist.
-- Releases: none. All releases: https://github.com/JesunAhmadUshno/fleet-capstone/releases
+- Learn: DONE 2026-11-05 (early pull), grade 7,900. Build: DONE 2026-11-06 (early pull), grade 8,300.
+- Actions polish pack: applied 2026-11-06. Pages: live, status built, https://jesunahmadushno.github.io/fleet-capstone/ verified HTTP 200 on 2026-11-06.
+- Fan-out: DONE at Build scope 2026-11-06, grade 9,497 of 10,000. Deep is not claimed.
+- Assembly (Deep) is scheduled 2026-12-28 to 2026-12-30, on top of the finished set, in Sprint 4. The fan-out will be completed at v1.0 scope in that window.
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/fleet-capstone/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/fleet-capstone/releases/tag/v0.5). No v1.0 release exists. All releases: https://github.com/JesunAhmadUshno/fleet-capstone/releases
 
 ## Named holds
 
 - P19 Deep: held on a verified Kaggle T4 x2 session, per Addendum B above. The 4-GPU scope stays parked as the v1.1 remainder.
 - P23 Build and Deep: blocked on a fresh live R610 capture in a planned power-on window.
-- P25 assembly: 2026-12-28 to 2026-12-30. Learn may be pulled forward, but is not done at this refresh.
+- P25 assembly: 2026-12-28 to 2026-12-30 for Deep. Learn and Build are DONE at Build scope, with polish pack, Pages, and Build scope fan-out DONE, verified 2026-11-06.
 - P24 cyber-range-lab: at v1.0 at defensive scope only. Its offensive scenario list stays held for Jesun batched sign-off. No scenario content is claimed here.
 - P30: DEFERRED until the first application target is named. P30 is not one of the 29 projects in the table below.
 
@@ -256,15 +258,15 @@ Note on wording: the ledger names the pair together. The Python 3.11 failure is 
 
 ## Flagships first
 
-1. fleet-capstone (P25): the full-stack chain in one repo. Status: SCAFFOLD, assembly 2026-12-28 to 2026-12-30 (see blocked or held set).
+1. fleet-capstone (P25): the full-stack chain in one repo. Status: Learn and Build DONE, polish pack applied, Pages live, fan-out DONE at Build scope; Deep assembly 2026-12-28 to 2026-12-30 (see blocked or held set).
 2. rag-eval-harness (P06) and agent-evals-and-harness (P27): evaluation, the strongest seed work. P06 is at v1.2; P27 is at v1.0 with fan-out DONE.
 3. rl-environments-and-verifiers (P26) with finetune-lab (P10): post-training. Both are at v1.0 with fan-out DONE.
 4. vllm-serving-lab (P03): the inference optimisation lab. Status: v1.0 with fan-out DONE.
 
 ## Verification notes for this refresh
 
-- Releases: gh release list checked live on 2026-11-05 for all 29 projects. Result: the 26 v1.0 projects each list v1.0, v0.5, and v0.1 (P06 also lists v1.2 and v1.1); P19 lists v0.5 and v0.1 only; P23 lists v0.1 only; P25 lists no releases.
-- P25 Learn claim: gh pr list for fleet-capstone (all states) returned no pull requests in this refresh, so no merged Learn pull request exists to claim.
+- Releases: gh release list checked live on 2026-11-05 for all 29 projects. Result: the 26 v1.0 projects each list v1.0, v0.5, and v0.1 (P06 also lists v1.2 and v1.1); P19 lists v0.5 and v0.1 only; P23 lists v0.1 only; P25 listed no releases at that check. Update 2026-11-06: P25 now lists v0.1 and v0.5 live, verified in this refresh.
+- P25 update 2026-11-06: gh release list shows v0.1 and v0.5 live, Pages status built with HTTP 200, and gh pr list shows no open pull requests. Learn (PR 1), Build (PR 2), polish pack (PR 3), and Build scope fan-out (PR 4) are merged per the batch ledger entries dated 2026-11-05 23:53 EST to 2026-11-06 00:53 EST.
 - Dependabot: gh pr view confirmed P11 PR #5 OPEN and P22 PR #5 OPEN, both titled Bump numpy from 1.26.4 to 2.5.4, in this refresh.
 - Pages and polish spot checks in this refresh: P19 Pages status built with its polish workflows active; Pages status built was also spot-checked live for llm-from-scratch, rag-eval-harness, rl-environments-and-verifiers, agent-memory-lab, and cyber-range-lab. All other Pages and polish claims in this README are taken from the batch ledger entries through 2026-11-05 23:23 EST, not re-checked repo by repo in this refresh, and are worded as per the ledger where that is the source.
 - Grades: numeric grades are stated only where the ledger or the previous verified index version carried them readily (Sprint 1 five, the early measured notes for P03, P04, and P07, P23 Learn, P06 v1.2, and the fan-out overall grades for P21, P22, P26, P28, and P29). No other numeric grade is claimed in this refresh.
@@ -297,7 +299,7 @@ Note on wording: the ledger names the pair together. The Python 3.11 failure is 
 | P22 | multimodal-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied; Dependabot PR #5 OPEN (named) |
 | P23 | server-and-networking-lab | Sprint 1 | Learn DONE (8,700); Build BLOCKED on fresh live R610 capture; Deep and fan-out NOT STARTED |
 | P24 | cyber-range-lab | Sprint 3 | v1.0: Learn, Build, Deep DONE (early), defensive only; fan-out DONE; polish pack applied; scenario list HELD for Jesun sign-off |
-| P25 | fleet-capstone | Sprint 4 assembly | SCAFFOLD; assembly 2026-12-28 to 2026-12-30; Learn NOT claimed done |
+| P25 | fleet-capstone | Sprint 4 assembly | Learn and Build DONE (early); polish pack applied; Pages live; fan-out DONE at Build scope; Deep assembly 2026-12-28 to 2026-12-30 |
 | P26 | rl-environments-and-verifiers | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 | P27 | agent-evals-and-harness | Sprint 3 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 | P28 | post-training-data-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
