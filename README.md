@@ -4,7 +4,7 @@ One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BAT
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-05 (Sprint 2 early pull: Learn and Build for P03, P04, P07; polish packs complete for all five v1.0 projects).
+Last updated: 2026-11-05 (P11, P15, and P16 at v1.0 with fan-out DONE, Actions polish packs applied, and Pages live; Sprint 2 early pull: Learn and Build for P03, P04, P07; polish packs complete for all five earlier v1.0 projects).
 
 ## Sprint structure: December Compression Protocol
 
@@ -83,9 +83,34 @@ Sprint 1's only remaining item (P23 Build) is blocked on a named external window
 - Build: DONE 2026-11-05 (early), grade 8,500. Plan-then-execute agent with persistent JSON memory and four named recovery strategies; 20 of 20 labelled tasks matched expectations (18 succeeded, 2 failed as expected), mean 1.5 steps, results byte-identical across two runs. The planner is a deterministic policy, not an LLM, stated plainly in the repo.
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-from-scratch/releases/tag/v0.5). Deep and fan-out: NOT STARTED.
 
+## Three more projects at v1.0 (2026-11-05)
+
+Releases were verified live with gh on 2026-11-05: each repo is public and its v1.0 release exists. Each repo PUBLICITY.md records its v1.0 fan-out set for 2026-11-05, its active workflows include the Actions polish pack (CI, CodeQL, Greetings, Labeler, Release artifacts, Stale in comment-only mode, and Dependabot), and GitHub Pages reports status built for each repo.
+
+### P11 quantization-lab
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05.
+- Fan-out: DONE.
+- Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/quantization-lab/
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/quantization-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/quantization-lab/releases
+
+### P15 local-first-ai
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05.
+- Fan-out: DONE.
+- Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/local-first-ai/
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/local-first-ai/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/local-first-ai/releases
+
+### P16 document-intelligence
+
+- Learn, Build, Deep: DONE, v1.0 on 2026-11-05.
+- Fan-out: DONE.
+- Actions polish pack: applied. Pages: live at https://jesunahmadushno.github.io/document-intelligence/
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/document-intelligence/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/document-intelligence/releases
+
 ## Honest status of the rest
 
-Of the other 24 projects (the 29 minus the five at v1.0 above), 20 remain at SCAFFOLD level (Wave 0, 2026-11-04) with Learn NOT STARTED. The exceptions in that group are P23 (Learn DONE, Build BLOCKED, above) and P03, P04, and P07 (Learn and Build DONE early, above). A scaffold is not a build and is never graded as one.
+Of the other 21 projects (the 29 minus the eight at v1.0 above), 17 remain at SCAFFOLD level (Wave 0, 2026-11-04) with Learn NOT STARTED. The exceptions in that group are P23 (Learn DONE, Build BLOCKED, above) and P03, P04, and P07 (Learn and Build DONE early, above). A scaffold is not a build and is never graded as one.
 
 ## Named holds
 
@@ -114,12 +139,12 @@ Of the other 24 projects (the 29 minus the five at v1.0 above), 20 remain at SCA
 | P08 | orchestrator-lab | Wave 4 | SCAFFOLD |
 | P09 | mcp-toolkit | Wave 4 | SCAFFOLD |
 | P10 | finetune-lab | Wave 5 | SCAFFOLD |
-| P11 | quantization-lab | Wave 6 | SCAFFOLD |
+| P11 | quantization-lab | Wave 6 | v1.0: Learn, Build, Deep DONE 2026-11-05; fan-out DONE; Actions polish pack applied; Pages live |
 | P12 | llm-observability | Wave 5 | SCAFFOLD |
 | P13 | guardrails-lab | Wave 5 | SCAFFOLD |
 | P14 | structured-outputs-lab | Wave 2 | v1.0: Learn, Build, Deep DONE 2026-11-04; fan-out DONE |
-| P15 | local-first-ai | Wave 7 | SCAFFOLD |
-| P16 | document-intelligence | Wave 6 | SCAFFOLD |
+| P15 | local-first-ai | Wave 7 | v1.0: Learn, Build, Deep DONE 2026-11-05; fan-out DONE; Actions polish pack applied; Pages live |
+| P16 | document-intelligence | Wave 6 | v1.0: Learn, Build, Deep DONE 2026-11-05; fan-out DONE; Actions polish pack applied; Pages live |
 | P17 | signal-ml-lab | Wave 3 | SCAFFOLD |
 | P18 | voice-agent-lab | Wave 7 | SCAFFOLD |
 | P19 | distributed-training-lab | Wave 4 (Learn and Build) | SCAFFOLD; Deep is the 2-GPU Kaggle set, Sprint 3 |
