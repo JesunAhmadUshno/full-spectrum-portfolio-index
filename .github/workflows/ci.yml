@@ -12,5 +12,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: scaffold smoke test
+      - name: README consistency smoke test
         run: python tests/test_smoke.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: README known-answer check (same parser as the site)
+        run: node site/src/index.check.mjs
