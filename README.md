@@ -6,16 +6,16 @@ Live dashboard: https://jesunahmadushno.github.io/full-spectrum-portfolio-index/
 
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
-Last updated: 2026-11-06, ledger state through 2026-11-06 00:53 EST (batch ledger hidden_files/batch-state.md). This refresh adds the P25 fleet-capstone Build scope state verified live on 2026-11-06: gh release list for fleet-capstone shows v0.1 and v0.5, Pages status built with HTTP 200 at https://jesunahmadushno.github.io/fleet-capstone/, and no open pull requests on that repo. All other project rows are unchanged from the 2026-11-05 refresh.
+Last updated: 2026-11-07, ledger state through 2026-11-06 00:53 EST (batch ledger hidden_files/batch-state.md). The 2026-11-07 refresh moves P19 distributed-training-lab to v1.0: its Deep level ran on two DGX Spark nodes (Owner route change from Kaggle T4 x2) and v1.0 was released and verified live on 2026-11-07. The 2026-11-06 refresh added the P25 fleet-capstone Build scope state verified live on 2026-11-06: gh release list for fleet-capstone shows v0.1 and v0.5, Pages status built with HTTP 200 at https://jesunahmadushno.github.io/fleet-capstone/, and no open pull requests on that repo. All other project rows are unchanged from the 2026-11-05 refresh.
 
 ## Headline state at this refresh
 
-- 26 projects are at v1.0, with Learn, Build, and compressed Deep DONE, written fan-out DONE, and Actions polish packs applied: P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14, P15, P16, P17, P18, P20, P21, P22, P24, P26, P27, P28, and P29.
+- 27 projects are at v1.0, with Learn, Build, and compressed Deep DONE, written fan-out DONE, and Actions polish packs applied: P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, P24, P26, P27, P28, and P29.
 - P06 rag-eval-harness is past v1.0 at v1.2 (see its section below).
 - P24 cyber-range-lab is at v1.0 at defensive scope only (see Named holds).
-- 3 projects are in the blocked or held set, named honestly below: P19, P23, and P25. No other project is held.
+- 2 projects are in the blocked or held set, named honestly below: P23 and P25. No other project is held.
 - P25 fleet-capstone is now at Build scope: Learn and Build DONE, Actions polish pack applied, Pages live, and written fan-out DONE at Build scope. Its Deep assembly stays scheduled 2026-12-28 to 2026-12-30 and is not claimed here.
-- Release verification in this refresh: every one of the 26 v1.0 projects shows a v1.0 release live on GitHub (gh release list, 2026-11-05), plus v0.5 and v0.1. P06 also shows v1.1 and v1.2. P19 shows only v0.5 and v0.1, P23 shows only v0.1, and P25 shows v0.1 and v0.5 verified live on 2026-11-06, which matches its Build scope state below.
+- Release verification in this refresh: every one of the 26 v1.0 projects shows a v1.0 release live on GitHub (gh release list, 2026-11-05), plus v0.5 and v0.1. P06 also shows v1.1 and v1.2. P19 added v1.0 on 2026-11-07 (verified live). P23 shows only v0.1, and P25 shows v0.1 and v0.5 verified live on 2026-11-06, which matches its Build scope state below.
 
 ## Sprint structure: December Compression Protocol
 
@@ -116,7 +116,7 @@ Sprint 2 is P03, P04, P07, P12, P13, and P17. All six are at v1.0 with fan-out D
 
 ### Sprint 3 projects at v1.0 (early pull, fan-out DONE)
 
-Sprint 3 projects at v1.0 in this refresh are P08, P09, P10, P24, and P27. P19 is the sixth Sprint 3 project and is in the blocked or held set below. Each project here shows v0.1, v0.5, and v1.0 releases live (verified in this refresh), with fan-out DONE and Actions polish packs applied per the ledger.
+Sprint 3 projects at v1.0 in this refresh are P08, P09, P10, P19, P24, and P27. P19 reached v1.0 on 2026-11-07, after the other five. Each project here shows v0.1, v0.5, and v1.0 releases live (verified in this refresh), with fan-out DONE and Actions polish packs applied per the ledger.
 
 #### P08 orchestrator-lab
 
@@ -148,6 +148,13 @@ Sprint 3 projects at v1.0 in this refresh are P08, P09, P10, P24, and P27. P19 i
 - Learn, Build, Deep: DONE, v1.0 on 2026-11-05 (early, Sprint 3 pull).
 - Fan-out: DONE. Actions polish pack: applied.
 - Releases: [v0.1](https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/agent-evals-and-harness/releases
+
+#### P19 distributed-training-lab
+
+- Learn, Build: DONE 2026-11-05 (early, Sprint 3 pull). Deep: DONE, v1.0 on 2026-11-07 (early, Sprint 3 pull).
+- Deep route: Owner ruling 2026-11-07 moved Deep from the Kaggle T4 x2 exercise set to two DGX Spark nodes (NVIDIA GB10) joined by 1 GbE. Pre-registered study: 5 of 7 hypotheses pass, 2 missed narrowly and reported as missed. Scaling beyond two nodes stays the parked v1.1 remainder.
+- Actions polish pack: applied. Pages: LIVE at https://jesunahmadushno.github.io/distributed-training-lab/
+- Releases: [v0.1](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v0.5), [v1.0](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v1.0). All releases: https://github.com/JesunAhmadUshno/distributed-training-lab/releases
 
 ### Sprint 4 projects at v1.0 (early pull, fan-out DONE)
 
@@ -219,14 +226,6 @@ Sprint 4 projects at v1.0 in this refresh are P11, P15, P16, P18, P20, P21, P22,
 
 ## Blocked or held set (named honestly)
 
-### P19 distributed-training-lab
-
-- Learn: DONE 2026-11-05 (early, Sprint 3 pull). Build: DONE 2026-11-05 (early, Sprint 3 pull).
-- Actions polish pack: DONE per the ledger. Pages: LIVE. Verified in this refresh: Pages status built at https://jesunahmadushno.github.io/distributed-training-lab/, and the polish workflows are active (CI, CodeQL, Greetings, Labeler, Release artifacts, Stale comment-only, and Dependabot).
-- Deep: OPEN. A prep package has shipped, but Deep closure needs a verified Kaggle T4 x2 session per Addendum B of the December Compression Protocol (Jesun ruling 2026-11-05: P19 Deep is the 2-GPU Kaggle exercise set, honestly labelled). No Kaggle session is claimed in the ledger through 2026-11-05 23:23 EST, and no GPU number is claimed for P19 Deep.
-- Parked scope: the 4-GPU scope is the parked v1.1 remainder in P19 ROADMAP.md.
-- Releases: [v0.1](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v0.1), [v0.5](https://github.com/JesunAhmadUshno/distributed-training-lab/releases/tag/v0.5). No v1.0 release exists, verified in this refresh. All releases: https://github.com/JesunAhmadUshno/distributed-training-lab/releases
-
 ### P23 server-and-networking-lab
 
 - Learn: DONE 2026-11-04, grade 8,700.
@@ -243,7 +242,6 @@ Sprint 4 projects at v1.0 in this refresh are P11, P15, P16, P18, P20, P21, P22,
 
 ## Named holds
 
-- P19 Deep: held on a verified Kaggle T4 x2 session, per Addendum B above. The 4-GPU scope stays parked as the v1.1 remainder.
 - P23 Build and Deep: blocked on a fresh live R610 capture in a planned power-on window.
 - P25 assembly: 2026-12-28 to 2026-12-30 for Deep. Learn and Build are DONE at Build scope, with polish pack, Pages, and Build scope fan-out DONE, verified 2026-11-06.
 - P24 cyber-range-lab: at v1.0 at defensive scope only. Its offensive scenario list stays held for Jesun batched sign-off. No scenario content is claimed here.
@@ -267,7 +265,7 @@ Note on wording: the ledger names the pair together. The Python 3.11 failure is 
 
 ## Verification notes for this refresh
 
-- Releases: gh release list checked live on 2026-11-05 for all 29 projects. Result: the 26 v1.0 projects each list v1.0, v0.5, and v0.1 (P06 also lists v1.2 and v1.1); P19 lists v0.5 and v0.1 only; P23 lists v0.1 only; P25 listed no releases at that check. Update 2026-11-06: P25 now lists v0.1 and v0.5 live, verified in this refresh.
+- Releases: gh release list checked live on 2026-11-05 for all 29 projects. Result: the 26 v1.0 projects each list v1.0, v0.5, and v0.1 (P06 also lists v1.2 and v1.1); P19 lists v0.5 and v0.1 only; P23 lists v0.1 only; P25 listed no releases at that check. Update 2026-11-06: P25 now lists v0.1 and v0.5 live, verified in this refresh. Update 2026-11-07: P19 now lists v0.1, v0.5 and v1.0 live.
 - P25 update 2026-11-06: gh release list shows v0.1 and v0.5 live, Pages status built with HTTP 200, and gh pr list shows no open pull requests. Learn (PR 1), Build (PR 2), polish pack (PR 3), and Build scope fan-out (PR 4) are merged per the batch ledger entries dated 2026-11-05 23:53 EST to 2026-11-06 00:53 EST.
 - Dependabot: gh pr view confirmed P11 PR #5 OPEN and P22 PR #5 OPEN, both titled Bump numpy from 1.26.4 to 2.5.4, in this refresh.
 - Pages and polish spot checks in this refresh: P19 Pages status built with its polish workflows active; Pages status built was also spot-checked live for llm-from-scratch, rag-eval-harness, rl-environments-and-verifiers, agent-memory-lab, and cyber-range-lab. All other Pages and polish claims in this README are taken from the batch ledger entries through 2026-11-05 23:23 EST, not re-checked repo by repo in this refresh, and are worded as per the ledger where that is the source.
@@ -295,7 +293,7 @@ Note on wording: the ledger names the pair together. The Python 3.11 failure is 
 | P16 | document-intelligence | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 | P17 | signal-ml-lab | Sprint 2 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 | P18 | voice-agent-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
-| P19 | distributed-training-lab | Sprint 3 | Learn and Build DONE; polish pack DONE; Pages LIVE; Deep OPEN (Kaggle T4 x2, Addendum B); 4-GPU scope parked v1.1 |
+| P19 | distributed-training-lab | Sprint 3 | v1.0: Learn, Build, Deep DONE (early); Deep on two DGX Spark nodes; polish pack applied |
 | P20 | ml-platform-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 | P21 | systems-languages-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied |
 | P22 | multimodal-lab | Sprint 4 | v1.0: Learn, Build, Deep DONE (early); fan-out DONE; polish pack applied; Dependabot PR #5 OPEN (named) |
