@@ -2,6 +2,8 @@
 
 One engineer, every layer, with receipts. This index presents the ROADMAP-V3-BATCH portfolio: 29 projects from networking and servers to cyber security to AI, machine learning, LLMs, agents, and orchestration.
 
+Live dashboard: https://jesunahmadushno.github.io/full-spectrum-portfolio-index/ (every count on it is parsed from this README at build time; the build fails if the README stops agreeing with itself).
+
 Status of every project below is honest at the row level. SCAFFOLD means the Wave 0 scaffold exists (spec, dossier v1, novelty draft, level folders). It does not mean built.
 
 Last updated: 2026-11-06, ledger state through 2026-11-06 00:53 EST (batch ledger hidden_files/batch-state.md). This refresh adds the P25 fleet-capstone Build scope state verified live on 2026-11-06: gh release list for fleet-capstone shows v0.1 and v0.5, Pages status built with HTTP 200 at https://jesunahmadushno.github.io/fleet-capstone/, and no open pull requests on that repo. All other project rows are unchanged from the 2026-11-05 refresh.
