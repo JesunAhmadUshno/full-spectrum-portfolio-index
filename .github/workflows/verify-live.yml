@@ -1,6 +1,6 @@
 name: Verify live
 
-# Weekly read-only re-check of the README's release and Pages claims against GitHub.
+# Weekly read-only re-check of the README's verdict table against each repo's live README and proposal-v1 tag.
 # A failure means the README is stale, not that a project broke.
 on:
   schedule:
