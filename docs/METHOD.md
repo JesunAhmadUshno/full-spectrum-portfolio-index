@@ -149,14 +149,19 @@ the R610 come back to the Owner one repo at a time.
 
 ## 7. Assignments and transition rules
 
-Field profiles (41 repos):
-- ML and AI research (22): P01, P02, P04, P05, P06, P10, P11, P14, P15,
+Field profiles (48 repos):
+- ML and AI research (26): P01, P02, P04, P05, P06, P10, P11, P14, P15,
   P16, P17, P18, P19, P22, P26, P27, P28, P29, langgraph-vs-native-study,
-  recommender-evaluation-lab, pytorch-depth-lab, document-intelligence-lab.
-- Systems, reliability (8): P03, P12, P20, P23, P24, P25,
-  terraform-for-ai-infrastructure, airflow-reliability-lab.
-- Systems, performance (4): hadoop-scale-lab, vector-systems-benchmark,
-  data-engineering-scale-lab, gpu-first-principles-lab.
+  recommender-evaluation-lab, pytorch-depth-lab, document-intelligence-lab,
+  llama-index-doc-lab, xgboost-credit-benchmark, langchain-direct-study,
+  mlops-evidence-lab.
+- Systems, reliability (10): P03, P12, P20, P23, P24, P25,
+  terraform-for-ai-infrastructure, airflow-reliability-lab,
+  kafka-streaming-lab, boto3-aws-emulation-lab. Whether
+  boto3-aws-emulation-lab fits better as a conformance study is an open
+  Owner question; it stays here until the Owner rules.
+- Systems, performance (5): hadoop-scale-lab, vector-systems-benchmark,
+  data-engineering-scale-lab, gpu-first-principles-lab, beam-pipeline-lab.
 - Software product (5): P07, P08, P09, P13, P21.
 - Data analysis (2): credit-risk-lab, experimentation-lab.
 
@@ -186,7 +191,9 @@ not capped; otherwise it is labelled "not pre-registered" like the rest.
 
 Public count: on adoption day the "27 of 29 at v1.0" line is retired
 everywhere at once and replaced by one dated line: "Standard v2 adopted
-on 2026-11-08; repos re-verified under it: N of 41."
+on 2026-11-08; repos re-verified under it: N of 48." (2026-11-08: seven
+labs added, from 41 to 48 repos; ray-distributed-lab joins when its build
+finishes.)
 
 ## 8. Lessons from the pilots
 
@@ -205,3 +212,14 @@ on 2026-11-08; repos re-verified under it: N of 41."
   Functional.
 - Studies that share a machine schedule around each other and record
   it.
+
+Lessons from the 2026-11-08 re-verification round:
+
+- A review before merge catches overstated wording. A verdict line that
+  claims more than the evidence shows is fixed before it reaches main,
+  not after.
+- Categories added after the lock never replace locked rules. A new way
+  of grouping results may be reported beside the locked pass lines, never
+  instead of them.
+- A rerun never overwrites a record. New runs are new dated files in
+  experiments/; the earlier record stays as it was.

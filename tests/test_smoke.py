@@ -1,76 +1,67 @@
 """Index smoke test: the README must agree with itself.
 
 Stdlib only. Run: python tests/test_smoke.py
-Checks that the "All 29 projects" table, the "Headline state" bullets and the
-per-project release links tell the same story, so a README refresh that drifts fails CI.
+Checks that the verdict table and the dated count line tell the same story, and that
+no grade text survives in a public file (grades are internal only, docs/METHOD.md section 5).
 """
 import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-README = os.path.join(ROOT, "README.md")
+LEVELS = ["v1.0 Released", "Evaluated", "Functional", "Proposed", "Draft"]
+COUNT = re.compile(r"Standard v2 adopted on (\d{4}-\d{2}-\d{2}); repos re-verified under it: (\d+) of (\d+)\.")
+ROW = re.compile(r"^\| \[([a-z0-9-]+)\]\((https://github\.com/[^)]+)\) \| ([^|]+) \| ([^|]+) \| (yes|no) \|$")
+# Built so this file does not spell out the old scale itself.
+GRADE_TEXT = re.compile(r"of 10,?000|\b\d{1,2},\d{3}\b|\bgrade\s+\d", re.I)
+PUBLIC = ["README.md", "docs/HISTORY.md", "docs/METHOD.md"]
 
 
-def read_readme():
-    with open(README, encoding="utf-8") as f:
+def read(path="README.md"):
+    with open(os.path.join(ROOT, path), encoding="utf-8") as f:
         return f.read()
 
 
+def level_of(verdict):
+    """The verdict level a verdict text starts with, or None."""
+    return next((lv for lv in LEVELS if verdict.startswith(lv)), None)
+
+
 def table_rows(md):
-    """Rows of the project table as dicts: id, repo, sprint, status, version (None if held)."""
+    """Rows of the verdict table as dicts: repo, field, verdict, level, locked."""
     rows = []
     for line in md.splitlines():
-        if re.match(r"^\| P\d{2} \|", line):
-            pid, repo, sprint, status = [c.strip() for c in line.strip().strip("|").split("|")]
-            m = re.match(r"^v(\d\.\d)", status)
-            rows.append({"id": pid, "repo": repo, "sprint": sprint, "status": status, "version": m.group(1) if m else None})
+        m = ROW.match(line)
+        if m:
+            repo, _, field, verdict, locked = m.groups()
+            rows.append({"repo": repo, "field": field.strip(), "verdict": verdict.strip(),
+                         "level": level_of(verdict.strip()), "locked": locked == "yes"})
     return rows
 
 
-def headline(md, phrase):
-    """(count, ids) from a 'Headline state' bullet such as '26 projects are at v1.0'."""
-    m = re.search(r"^- (\d+) projects are " + re.escape(phrase) + r"[^:]*: (.+)$", md, re.M)
-    assert m, "headline bullet not found: " + phrase
-    return int(m.group(1)), re.findall(r"P\d{2}", m.group(2))
-
-
-def release_tags(md):
-    """{project id: set of release tags linked in its '#### Pxx' / '### Pxx' section}."""
-    tags, cur = {}, None
-    for line in md.splitlines():
-        h = re.match(r"^#{3,4} (P\d{2}) ", line)
-        if h:
-            cur = h.group(1)
-            tags[cur] = set()
-        elif line.startswith("#"):
-            cur = None
-        elif cur:
-            tags[cur].update(re.findall(r"\[(v\d\.\d)\]\(https://github\.com/[^)]+/releases/tag/v\d\.\d\)", line))
-    return tags
+def count_line(md):
+    """(verified, total) from the dated count line."""
+    m = COUNT.search(md)
+    assert m, "dated count line not found"
+    return int(m.group(2)), int(m.group(3))
 
 
 def main():
-    md = read_readme()
+    md = read()
     rows = table_rows(md)
-    assert len(rows) == 29, "expected 29 table rows, got %d" % len(rows)
-    assert len({r["id"] for r in rows}) == 29, "duplicate project IDs in the table"
-
-    v1 = [r["id"] for r in rows if r["version"]]
-    held = [r["id"] for r in rows if not r["version"]]
-    n_v1, ids_v1 = headline(md, "at v1.0")
-    n_held, ids_held = headline(md, "in the blocked or held set")
-    assert n_v1 == len(ids_v1) == len(v1) and sorted(ids_v1) == sorted(v1), "v1.0 count drift: headline %d, table %d" % (n_v1, len(v1))
-    assert n_held == len(ids_held) and sorted(ids_held) == sorted(held), "held set drift: %s vs %s" % (ids_held, held)
-    assert len(v1) + len(held) == len(rows)
-
-    tags = release_tags(md)
-    for pid in v1:
-        missing = {"v0.1", "v0.5", "v1.0"} - tags.get(pid, set())
-        assert not missing, "%s is v1.0 in the table but lacks release links %s" % (pid, sorted(missing))
-    for pid in held:
-        assert "v1.0" not in tags.get(pid, set()), "%s is held but links a v1.0 release" % pid
-
-    print("index smoke test: PASS (%d rows, %d at v1.0, held %s)" % (len(rows), len(v1), ", ".join(held)))
+    verified, total = count_line(md)
+    assert len(rows) == total, "count line says %d repos, table has %d" % (total, len(rows))
+    assert verified == total, "count line: %d of %d re-verified" % (verified, total)
+    assert len({r["repo"] for r in rows}) == len(rows), "duplicate repo in the table"
+    for r in rows:
+        assert r["level"], "%s: unknown verdict %r" % (r["repo"], r["verdict"])
+        if "not pre-registered" in r["verdict"]:
+            assert LEVELS.index(r["level"]) >= LEVELS.index("Functional"), "%s: not pre-registered above Functional" % r["repo"]
+    for path in PUBLIC:
+        hit = GRADE_TEXT.search(read(path))
+        assert not hit, "%s carries grade text: %r" % (path, hit.group(0))
+    by_level = {lv: sum(r["level"] == lv for r in rows) for lv in LEVELS}
+    print("index smoke test: PASS (%d repos; %s; plan locked %d)" % (
+        len(rows), ", ".join("%s %d" % kv for kv in by_level.items()), sum(r["locked"] for r in rows)))
 
 
 if __name__ == "__main__":
