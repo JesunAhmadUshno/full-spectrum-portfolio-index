@@ -13,7 +13,7 @@ const PILL = { 'v1.0 Released': 'good', Evaluated: 'good', Functional: 'info', P
 
 export default function App() {
   return (
-    <div className="wrap">
+    <div className="wrap"><a className="skip" href="#top">Skip to content</a>
       <div className="menubar" role="banner">
         <a className="app" href="#top">Portfolio Index</a>
         <a className="m" href={blob('README.md')}>README</a>
@@ -28,14 +28,14 @@ export default function App() {
       <footer>
         Source: <code>README.md</code> in this repo, parsed at build time; totals and filters compute in your browser.
         Verdicts follow <a href={blob('docs/METHOD.md')}>the portfolio method standard</a>. Code: Apache-2.0.
-      </footer>
+      <nav className="support" aria-label="Support this work"><a href="https://github.com/sponsors/JesunAhmadUshno">Sponsor this work</a><a href="https://github.com/sponsors/JesunAhmadUshno">Donate</a><a href="https://buymeacoffee.com/jesun">Buy Me a Coffee</a><a href="https://calendly.com/jesunahmadushno/30min">Work with me</a></nav></footer>
     </div>
   );
 }
 
 function Hero() {
   return (
-    <header className="card hero window" id="top" data-title="full-spectrum-portfolio-index — README.md">
+    <header className="card hero window" id="top" data-title="full-spectrum-portfolio-index - README.md">
       <div className="head">
         <p className="eyebrow">Portfolio index · standard v2</p>
         <span className={`pill ${passed === checks.length ? 'good' : 'bad'}`}>● {passed}/{checks.length} consistency checks pass</span>
@@ -57,7 +57,7 @@ function Explorer() {
   const [locked, setLocked] = useState(false);
   const shown = useMemo(() => filterRows(rows, { q, field, level, locked }), [q, field, level, locked]);
   return (
-    <section id="explorer" className="card window" data-title="index.table — all repos">
+    <section id="explorer" className="card window" data-title="index.table - all repos">
       <div className="head">
         <div>
           <p className="eyebrow">All {T.total} repos</p>
