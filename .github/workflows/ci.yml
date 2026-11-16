@@ -14,7 +14,7 @@ jobs:
           python-version: "3.12"
       - name: README consistency smoke test
         run: python tests/test_smoke.py
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
       - name: README known-answer check (same parser as the site)
