@@ -14,14 +14,14 @@ const t = totals(d.rows);
 // Count line and totals
 assert.equal(d.countLine, 'Standard v2 adopted on 2026-11-08; repos re-verified under it: 48 of 48.');
 assert.equal(t.total, 48);
-assert.deepEqual(t.byLevel, { 'v1.0 Released': 1, Evaluated: 2, Functional: 39, Proposed: 1, Draft: 5 });
+assert.deepEqual(t.byLevel, { 'v1.0 Released': 1, Evaluated: 3, Functional: 39, Proposed: 0, Draft: 5 });
 assert.equal(t.locked, 20, 'repos with a proposal-v1 tag');
 assert.deepEqual(fields(d.rows), ['ML and AI research', 'Systems, reliability', 'Systems, performance', 'Software product', 'Data analysis']);
 
 // Spot rows
 const by = Object.fromEntries(d.rows.map((r) => [r.repo, r]));
 assert.equal(by['distributed-training-lab'].level, 'v1.0 Released');
-assert.equal(by['hadoop-scale-lab'].level, 'Proposed');
+assert.equal(by['hadoop-scale-lab'].level, 'Evaluated');
 assert.equal(by['agent-from-scratch'].verdict, 'Functional, not pre-registered');
 assert.equal(by['server-and-networking-lab'].level, 'Functional');
 assert.equal(by['server-and-networking-lab'].notPreRegistered, false);
@@ -29,7 +29,7 @@ assert.equal(by['server-and-networking-lab'].notPreRegistered, false);
 // Filters
 assert.equal(filterRows(d.rows, { field: 'Data analysis' }).length, 2);
 assert.equal(filterRows(d.rows, { level: 'Draft' }).length, 5);
-assert.equal(filterRows(d.rows, { locked: true, level: 'Evaluated' }).length, 2);
+assert.equal(filterRows(d.rows, { locked: true, level: 'Evaluated' }).length, 3);
 assert.deepEqual(filterRows(d.rows, { q: 'kafka' }).map((r) => r.repo), ['kafka-streaming-lab']);
 
 // A drifted README fails the audit
