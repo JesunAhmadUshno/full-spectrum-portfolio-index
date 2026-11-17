@@ -64,7 +64,7 @@ Grouped by field profile (section 7 of the standard), then by verdict.
 | [data-engineering-scale-lab](https://github.com/JesunAhmadUshno/data-engineering-scale-lab) | Systems, performance | Functional | yes |
 | [gpu-first-principles-lab](https://github.com/JesunAhmadUshno/gpu-first-principles-lab) | Systems, performance | Functional | yes |
 | [vector-systems-benchmark](https://github.com/JesunAhmadUshno/vector-systems-benchmark) | Systems, performance | Functional | yes |
-| [hadoop-scale-lab](https://github.com/JesunAhmadUshno/hadoop-scale-lab) | Systems, performance | Proposed | yes |
+| [hadoop-scale-lab](https://github.com/JesunAhmadUshno/hadoop-scale-lab) | Systems, performance | Evaluated | yes |
 | [agent-from-scratch](https://github.com/JesunAhmadUshno/agent-from-scratch) | Software product | Functional, not pre-registered | no |
 | [guardrails-lab](https://github.com/JesunAhmadUshno/guardrails-lab) | Software product | Functional, not pre-registered | no |
 | [mcp-toolkit](https://github.com/JesunAhmadUshno/mcp-toolkit) | Software product | Functional, not pre-registered | no |
